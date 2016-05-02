@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="./miner.css">
+		<link rel="stylesheet" type="text/css" href="./css">
+		<script src="./jquery-1.12.0.min.js"></script>
+		<script src="./miner.js"></script>
+		
+		<style type="text/css"></style>
+	</head>
+	
+	<title>	Minesweeper</title>
+	
+	<body  onselectstart="return false;" oncontextmenu="window.event.returnValue=false">
+		
+		<div style="overflow-x:auto;">
+			<table class="Setting">
+				<tr class="Setting">
+					<th class="Setting">高(5~30)</th>
+					<th class="Setting">寬(5~30)</th>
+					<th class="Setting">數量(長x寬x(0.1~0.6))</th>
+				</tr>
+				<tr class="Setting">
+				<td class="Setting"><input type="number" value = 10 name="n" id = "row" min="5" max="30"></td>
+				<td class="Setting"><input type="number" value = 10 name="m" id = "col" min="5" max="30"></td>
+				<td class="Setting"><input type="number" value = 10 name="x" id = "num" min="1" ></td>
+				</tr>
+				<tr>
+					<td class="Setting"><button onclick="start();" class="btnStart">Start</button></td>
+					<td class="Setting"><button onclick="help();" class="btnHelp">Help</button></td>
+					<td class="Setting"><p id = "restBombs"></p></td>
+					<td class="Setting"><p id = "timer"></p></td>
+				</tr>
+			</table>
+		</div>
+		<p title = "HELLO" id = "warning"></p>
+		<hr>
+		<table class = "GameZone" id = "gamezone">
+		</table>
+		<script>start();</script>
+		
+	</body>
+</html>

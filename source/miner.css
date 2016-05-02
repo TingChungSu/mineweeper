@@ -1,0 +1,54 @@
+
+html {
+    background-color: #00ee55;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+button{
+	
+}
+div,h1{
+	left: 50%;
+}
+p#restBombs,p#timer{
+	font-size: 120%;
+	font-weight:bolder;
+	color: black;
+}
+
+
+table, td , th{
+    margin: auto;
+}
+table.Setting {
+    border-collapse: collapse;
+	background-color : inherit;
+}
+.Setting  {
+	border: none;
+	background-color : inherit;
+}
+table.GameZone{
+	border-collapse: collapse;
+}
+td.GameZone{
+	
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+.GameZone{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 90%;
+	font-weight:bolder;
+
+    border-radius: 5px;
+
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+
+    border: 5px solid #BBBBBB;
+}
