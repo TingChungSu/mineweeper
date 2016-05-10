@@ -78,6 +78,7 @@ function start(){
 	}
 }
 function gameCreate(x,y){
+	clearTimer();
 	if(gameOver)
 		return;
     console.log("gameCreate.");
